@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Wallet - Wallet</title>
+    <link rel="stylesheet" href="wallet.css">
+</head>
+<body>
+    <div class="wallet-container">
+        <div class="header">
+            <button class="icon-btn back-btn" onclick="window.location.href='home.html'">←</button>
+            <h1 class="header-title">WALLET</h1>
+        </div>
+
+        <div class="balance-card">
+            <div class="balance-info">
+                <p class="balance-label">Available Balance: <span class="amount">P5,800</span></p>
+                <div class="limit-details">
+                    <div>
+                        <p>Spending Limit: P5,000</p>
+                        <p>Remaining Limit: P700</p>
+                    </div>
+                    <div class="small-progress">
+                        <div class="progress-circle small" data-percent="77">
+                            <span class="progress-text">77%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="spending-breakdown">
+            <h3 class="section-title">Spending Breakdown</h3>
+            <div class="donut-chart">
+                <svg class="chart-svg" viewBox="0 0 280 280">
+                    <circle class="chart-bg" cx="140" cy="140" r="100" fill="none" stroke="#3a3a3a" stroke-width="40"></circle>
+                    <circle class="chart-segment food" cx="140" cy="140" r="100" fill="none" stroke="#4caf50" stroke-width="40" stroke-dasharray="440 628" stroke-dashoffset="0" stroke-linecap="round"></circle>
+                    <circle class="chart-segment transportation" cx="140" cy="140" r="100" fill="none" stroke="#00bcd4" stroke-width="40" stroke-dasharray="125 628" stroke-dashoffset="-440" stroke-linecap="round"></circle>
+                    <circle class="chart-segment shopping" cx="140" cy="140" r="100" fill="none" stroke="#cd853f" stroke-width="40" stroke-dasharray="125 628" stroke-dashoffset="-565" stroke-linecap="round"></circle>
+                </svg>
+                <div class="chart-labels">
+                    <div class="chart-label food-label">Food</div>
+                    <div class="chart-label transport-label">Transportation</div>
+                    <div class="chart-label shopping-label">Shopping</div>
+                </div>
+            </div>
+        </div>
+
+        <button class="action-btn blue coach-btn" onclick="window.location.href='financial-coach.html'">
+            <span class="btn-icon">🤖</span>
+            <span>Financial Coach</span>
+        </button>
+    </div>
+</body>
+</html>
+
