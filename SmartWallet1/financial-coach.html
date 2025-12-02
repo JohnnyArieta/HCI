@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Wallet - Financial Coach</title>
+    <link rel="stylesheet" href="financial-coach.css">
+</head>
+<body>
+    <div class="coach-container">
+        <div class="header">
+            <button class="icon-btn back-btn" onclick="window.location.href='home.html'">←</button>
+            <h1 class="header-title">FINANCIAL COACH</h1>
+        </div>
+
+        <div class="coach-avatar">
+            <div class="avatar-circle" style="border: 2px solid #000; border-radius: 50%; width: 150px; height: 150px; display: flex; justify-content: center; align-items: center;">
+                <img src="2.png" alt="Coach Avatar" class="robot-avatar" style="width: 95%; height: 95%; border-radius: 50%;">
+            </div>
+        </div>
+        
+        <div class="chat-container">
+            <div class="chat-bubble left auto-advice">
+                <span class="bubble-icon">💡</span>
+                <span>Auto Advice: I've noticed that you spend more on shopping! you should control your urges and buy only what you need and save the rest.</span>
+            </div>
+            <div class="chat-bubble right">
+                <span>Give me advice about food.</span>
+            </div>
+            <div class="chat-bubble left">
+                <span>Plan your meals and avoid daily takeout to save money and eat better.</span>
+            </div>
+            <div class="chat-bubble right">
+                <span>Okay! Thank you for the advice.</span>
+            </div>
+            <div class="chat-bubble left">
+                <span>Your Welcome!</span>
+            </div>
+        </div>
+
+        <div class="input-container" style="position: relative;">
+            <input type="text" placeholder="Ask any Advice" class="chat-input" style="width: 100%; padding-right: 40px;">
+            <button class="send-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; font-size: 1.5rem; color: #999; opacity: 0.7; cursor: pointer;" title="Send">→</button>
+        </div>
+</body>
+</html>
+

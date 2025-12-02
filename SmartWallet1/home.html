@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Wallet - Home</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js" defer></script> <!-- Link the external JavaScript file -->
+</head>
+<body>
+    <div class="home-container">
+
+        <!-- HEADER -->
+        <div class="header">
+            <h1 class="header-title">SMART WALLET</h1>
+            <button class="icon-btn" onclick="window.location.href='settings.html'">⚙️</button>
+        </div>
+
+        <!-- SPENDING LIMIT CIRCLE -->
+        <div class="spending-limit-section">
+            <div class="circular-progress">
+                <div class="progress-circle" data-percent="77">
+                    <span class="progress-text">77%</span>
+                </div>
+            </div>
+
+            <div class="lock-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 11H6C4.89543 11 4 11.8954 4 13V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V13C20 11.8954 19.1046 11 18 11Z" stroke="#FFD700" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11" stroke="#FFD700" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+
+            <p class="limit-label">Daily Spending Limit</p>
+            <div class="alert-text">WALLET LOCKED - LIMIT REACHED</div>
+        </div>
+
+        <!-- BALANCE CARD -->
+        <div class="balance-card">
+            <div class="balance-info">
+                <p class="balance-label">Current Balance: <span class="amount">P5,800</span></p>
+
+                <div class="limit-details">
+                    <div>
+                        <p>Spending Limit: P5,000</p>
+                        <p>Remaining Limit: P100</p>
+                    </div>
+
+                    <div class="small-progress">
+                        <div class="progress-circle small" data-percent="77">
+                            <span class="progress-text">77%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ACTION BUTTONS -->
+        <div class="action-buttons">
+
+            <!-- RED CARD -->
+            <button class="action-btn red">
+                <span class="btn-icon">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                        <circle cx="18" cy="18" r="17" fill="#cc0000"/>
+                        <circle cx="18" cy="18" r="13" fill="#ff0000"/>
+                        <circle cx="18" cy="18" r="10" fill="#ff3333"/>
+                        <path d="M18 12V18M18 22H18.01" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                </span>
+                <span>Limit Reached: Your wallet locks automatically to prevent overspending</span>
+            </button>
+
+            <!-- SET LIMIT -->
+            <button class="action-btn orange" onclick="window.location.href='set-limit.html'">
+                <span class="btn-icon">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                        <circle cx="18" cy="18" r="18" fill="#1a237e"/>
+                        <text x="18" y="24" font-size="20" font-weight="bold" fill="white" text-anchor="middle">P</text>
+                    </svg>
+                </span>
+                <span>Set Spending Limit: Daily, Weekly, Monthly, and categories</span>
+            </button>
+
+            <!-- GPS TRACKING -->
+            <button class="action-btn green" onclick="window.location.href='track-wallet.html'">
+                <span class="btn-icon">
+                    <svg width="36" height="36" viewBox="0 0 36 36">
+                        <circle cx="18" cy="18" r="18" fill="#1b5e20"/>
+                        <path d="M18 4C12.48 4 8 8.48 8 14C8 21 18 32 18 32C18 32 28 21 28 14C28 8.48 23.52 4 18 4ZM18 18.5C16.07 18.5 14.5 16.93 14.5 15C14.5 13.07 16.07 11.5 18 11.5C19.93 11.5 21.5 13.07 21.5 15C21.5 16.93 19.93 18.5 18 18.5Z" fill="white"/>
+                    </svg>
+                </span>
+                <span>GPS TRACKING: Track your Wallet.</span>
+            </button>
+
+            <!-- FINANCIAL COACH (🤖 EMOJI ICON) -->
+            <button class="action-btn blue" onclick="window.location.href='financial-coach.html'">
+                <span class="btn-icon" style="font-size: 34px; display: flex; align-items: center; justify-content: center;">
+                    🤖
+                </span>
+                <span>Financial Coach: Get Financial Advice.</span>
+            </button>
+        </div>
+
+        <!-- NAV BAR -->
+        <div class="nav-bar">
+            <button class="nav-item" onclick="window.location.href='history.html'">
+                <span class="nav-icon">🕒</span>
+                <span>History</span>
+            </button>
+
+            <button class="nav-item active">
+                <span class="nav-icon">🏠</span>
+                <span>Home</span>
+            </button>
+
+            <button class="nav-item" onclick="window.location.href='settings.html'">
+                <span class="nav-icon">⚙️</span>
+                <span>Settings</span>
+            </button>
+        </div>
+
+    </div>
+</body>
+</html>
